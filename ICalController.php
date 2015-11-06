@@ -28,7 +28,7 @@ class ICalController extends Action
                     $iCal .= "DTSTAMP:" . gmdate('Ymd').'T'. gmdate('His') . "Z\r\n";
                     $iCal .= "DTSTART:" . $this->getParam('start') . "\r\n";
                     $iCal .= "DTEND:" . $this->getParam('end') . "\r\n";
-                    $iCal .= "SUMMARY:Physiotherapie\r\n";
+                    $iCal .= "SUMMARY:YOUR-SUMMARY\r\n";
                     $iCal .= "END:VEVENT\r\n";
                     $iCal .= "END:VCALENDAR\r\n";
 
