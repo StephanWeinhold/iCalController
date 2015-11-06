@@ -24,7 +24,7 @@ class ICalController extends Action
                     $iCal .= "VERSION:2.0\r\n";
                     $iCal .= "PRODID:-//hacksw/handcal//NONSGML v1.0//EN\r\n";
                     $iCal .= "BEGIN:VEVENT\r\n";
-                    $iCal .= "UID:" . md5(uniqid(mt_rand(), true)) . "@wiberg.eu\r\n";
+                    $iCal .= "UID:" . md5(uniqid(mt_rand(), true)) . "@your-domain.com\r\n";
                     $iCal .= "DTSTAMP:" . gmdate('Ymd').'T'. gmdate('His') . "Z\r\n";
                     $iCal .= "DTSTART:" . $this->getParam('start') . "\r\n";
                     $iCal .= "DTEND:" . $this->getParam('end') . "\r\n";
